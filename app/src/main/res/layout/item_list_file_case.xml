@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/_10sdp"
+    android:layout_marginRight="@dimen/_10sdp"
+    android:layout_marginTop="@dimen/_5sdp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_10sdp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/case_id"
+            android:textSize="@dimen/_15sdp"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="Case ID : 156"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/case_name"
+            android:textSize="@dimen/_15sdp"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="Case ID : 156"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/case_files_number"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:textSize="@dimen/_13sdp"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="45 Files"
+            />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

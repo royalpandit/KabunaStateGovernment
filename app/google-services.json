@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "887941646356",
+    "firebase_url": "https://pacific-smile-179006.firebaseio.com",
+    "project_id": "pacific-smile-179006",
+    "storage_bucket": "pacific-smile-179006.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:887941646356:android:498a557b8021f7d1",
+        "android_client_info": {
+          "package_name": "com.kapalert.kadunastategovernment"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "887941646356-rqkg3go8t3d6aeihuq1c1prbo7v32694.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBIEMgtHBG-hPyNl5XQaoA0dQmIB5fd-VM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

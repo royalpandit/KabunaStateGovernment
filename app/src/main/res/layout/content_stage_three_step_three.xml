@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.kapalert.kadunastategovernment.activities.StageThreeStepThreeActivity"
+    tools:showIn="@layout/activity_stage_three_step_three">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/_15sdp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/adjournment_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/add_adjournment_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_rounded_button"
+                android:minHeight="0dp"
+                android:minWidth="0dp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:padding="@dimen/_7sdp"
+                android:text="@string/add_adjourment_data"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14sdp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/date_first_mention"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp" />
+
+            <TextView
+                android:id="@+id/date_first_mention"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:background="@drawable/shape_rounded_primary"
+                android:hint="@string/date_hint"
+                android:padding="@dimen/_8sdp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/white"
+                android:textSize="@dimen/_15sdp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/date_prosecution_case_commences"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp" />
+
+            <TextView
+                android:id="@+id/date_prosecution_commences"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:background="@drawable/shape_rounded_primary"
+                android:hint="@string/date_hint"
+                android:padding="@dimen/_8sdp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/white"
+                android:textSize="@dimen/_15sdp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/date_prosecution_case_completed"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp" />
+
+            <TextView
+                android:id="@+id/date_prosecution_completed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:background="@drawable/shape_rounded_primary"
+                android:hint="@string/date_hint"
+                android:padding="@dimen/_8sdp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/white"
+                android:textSize="@dimen/_15sdp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/date_defense_case_commenced"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp" />
+
+            <TextView
+                android:id="@+id/date_def_commences"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:background="@drawable/shape_rounded_primary"
+                android:hint="@string/date_hint"
+                android:padding="@dimen/_8sdp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/white"
+                android:textSize="@dimen/_15sdp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/date_defense_case_completed"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp" />
+
+            <TextView
+                android:id="@+id/date_def_completed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:background="@drawable/shape_rounded_primary"
+                android:hint="@string/date_hint"
+                android:padding="@dimen/_8sdp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/white"
+                android:textSize="@dimen/_15sdp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/date_address_completed"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp" />
+
+            <TextView
+                android:id="@+id/date_address_complete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:background="@drawable/shape_rounded_primary"
+                android:hint="@string/date_hint"
+                android:padding="@dimen/_8sdp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/white"
+                android:textSize="@dimen/_15sdp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/date_of_judgement"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp" />
+
+            <TextView
+                android:id="@+id/date_of_judgement"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:background="@drawable/shape_rounded_primary"
+                android:hint="@string/date_hint"
+                android:padding="@dimen/_8sdp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/white"
+                android:textSize="@dimen/_15sdp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/date_of_sentencing"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp" />
+
+            <TextView
+                android:id="@+id/date_sentencing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:background="@drawable/shape_rounded_primary"
+                android:hint="@string/date_hint"
+                android:padding="@dimen/_8sdp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/white"
+                android:textSize="@dimen/_15sdp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/date_final_case_report_dpp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp" />
+
+            <TextView
+                android:id="@+id/date_final_case_report_dpp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:background="@drawable/shape_rounded_primary"
+                android:hint="@string/date_hint"
+                android:padding="@dimen/_8sdp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/white"
+                android:textSize="@dimen/_15sdp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/date_case_closed"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp" />
+
+            <TextView
+                android:id="@+id/date_case_closed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:background="@drawable/shape_rounded_primary"
+                android:hint="@string/date_hint"
+                android:padding="@dimen/_8sdp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/white"
+                android:textSize="@dimen/_15sdp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/judgement_narrative"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_160sdp"
+                android:gravity="top"
+                android:textColor="@color/white"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:hint="@string/judgement_narrative"
+                android:padding="@dimen/_5sdp"
+                android:textColorHint="@color/white"
+                android:id="@+id/judgement_narrative"
+                android:background="@drawable/shape_rounded_primary"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/select_judgement_each_accused"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/judgement_accused_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_rect_button"
+        android:minHeight="0dp"
+        android:minWidth="0dp"
+        android:padding="@dimen/_7sdp"
+        android:text="@string/submit"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_16sdp" />
+
+</LinearLayout>

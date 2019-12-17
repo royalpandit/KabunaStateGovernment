@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.kapalert.kadunastategovernment.activities.StageOneStepEightActivity"
+    tools:showIn="@layout/activity_stage_one_step_eight">
+
+    <LinearLayout
+        android:id="@+id/accused_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/accused_list"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_rect_button"
+            android:minHeight="0dp"
+            android:minWidth="0dp"
+            android:padding="@dimen/_7sdp"
+            android:text="@string/save"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_16sdp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/comment_container"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="@dimen/_20sdp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/select_file"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/comment_file_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_rounded_primary"
+                    android:ems="10"
+                    android:hint="@string/file_name"
+                    android:inputType="textPersonName"
+                    android:padding="@dimen/_8sdp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/white"
+                    android:textSize="@dimen/_15sdp" />
+
+                <ImageView
+                    android:id="@+id/comment_file_select"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:src="@drawable/ic_add_file" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/comment_text"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_80sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/shape_rounded_primary"
+                android:ems="10"
+                android:gravity="top"
+                android:hint="@string/description"
+                android:inputType="textMultiLine"
+                android:padding="@dimen/_8sdp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/white"
+                android:textSize="@dimen/_15sdp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/send"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_rect_button"
+            android:minHeight="0dp"
+            android:minWidth="0dp"
+            android:padding="@dimen/_7sdp"
+            android:text="@string/send_litigation"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_16sdp" />
+
+    </LinearLayout>
+</LinearLayout>

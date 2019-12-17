@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_15sdp"
+        android:text="@string/adjournment_data"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_20sdp" />
+
+    <LinearLayout
+        android:layout_width="@dimen/_280sdp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="@dimen/_10sdp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/reasonable_progress_made"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14sdp" />
+
+        <EditText
+            android:id="@+id/progress_made"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:background="@drawable/shape_rounded_primary"
+            android:ems="10"
+            android:hint="@string/reasonable_progress_made"
+            android:inputType="text"
+            android:padding="@dimen/_8sdp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/white"
+            android:textSize="@dimen/_15sdp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="@string/select_adjournment_reason"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14sdp" />
+
+        <Spinner
+            android:id="@+id/adjournment_reason"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:background="@null" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="@string/select_hearing_date"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14sdp" />
+
+        <TextView
+            android:id="@+id/date_hearing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:background="@drawable/shape_rounded_primary"
+            android:hint="@string/date_hint"
+            android:padding="@dimen/_8sdp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/white"
+            android:textSize="@dimen/_15sdp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="@string/select_next_hearing_date"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14sdp" />
+
+        <TextView
+            android:id="@+id/date_new_hearing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:background="@drawable/shape_rounded_primary"
+            android:hint="@string/date_hint"
+            android:padding="@dimen/_8sdp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/white"
+            android:textSize="@dimen/_15sdp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_15sdp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.50"
+            android:background="@drawable/selector_rounded_button"
+            android:minHeight="0dp"
+            android:minWidth="0dp"
+            android:padding="@dimen/_7sdp"
+            android:text="@string/cancel"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp" />
+        <Button
+            android:id="@+id/add"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.50"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:background="@drawable/selector_rounded_button"
+            android:minHeight="0dp"
+            android:minWidth="0dp"
+            android:padding="@dimen/_7sdp"
+            android:text="@string/add"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp" />
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_15sdp"
+        android:text="@string/add_accused"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_20sdp" />
+
+    <EditText
+        android:id="@+id/accused_name"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_marginRight="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/shape_rounded_primary"
+        android:ems="10"
+        android:hint="@string/accused_name"
+        android:inputType="text"
+        android:padding="@dimen/_8sdp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/white"
+        android:textSize="@dimen/_13sdp" />
+
+    <EditText
+        android:id="@+id/accused_age"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_marginRight="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/shape_rounded_primary"
+        android:ems="10"
+        android:hint="@string/accused_age"
+        android:inputType="numberDecimal"
+        android:maxLength="5"
+        android:padding="@dimen/_8sdp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/white"
+        android:textSize="@dimen/_13sdp" />
+    <LinearLayout
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_marginRight="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:maxLength="5"
+        android:padding="@dimen/_4sdp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/white"
+        android:textSize="@dimen/_13sdp"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_rounded_primary"
+        >
+        <Spinner
+            android:id="@+id/genderspinner"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_15sdp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:layout_weight="0.50"
+            android:background="@drawable/selector_rounded_button"
+            android:minHeight="0dp"
+            android:minWidth="0dp"
+            android:padding="@dimen/_7sdp"
+            android:text="@string/cancel"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp" />
+
+        <Button
+            android:id="@+id/update"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.50"
+            android:background="@drawable/selector_rounded_button"
+            android:minHeight="0dp"
+            android:minWidth="0dp"
+            android:padding="@dimen/_7sdp"
+            android:text="@string/add"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp" />
+    </LinearLayout>
+</LinearLayout>

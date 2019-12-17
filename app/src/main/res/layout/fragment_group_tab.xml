@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+android:id="@+id/lin"
+        android:orientation="horizontal"
+android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/group"
+            android:text="Group"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:textColor="@color/white"
+            android:layout_height="40dp"
+            android:background="?attr/colorPrimary"
+            />
+
+        <Button
+            android:id="@+id/persona"
+            android:text="Personal"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:background="?attr/colorPrimary"
+            />
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/frame_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+   <!-- <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabs"
+         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabGravity="fill"
+        android:elevation="6dp"
+        android:background="?attr/colorPrimary"
+        app:tabMode="fixed" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+-->
+</LinearLayout>

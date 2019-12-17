@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/progressDialog"
+    android:layout_width="wrap_content"
+    android:layout_centerInParent="true"
+    android:layout_height="wrap_content"
+    android:background="@drawable/round_grey_background"
+    android:gravity="center_horizontal"
+    tools:ignore="MissingPrefix"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imgSpinner"
+        android:layout_width="50dip"
+        android:layout_height="50dip"
+        android:layout_marginBottom="10dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="10dip"
+        android:layout_gravity="center"
+        android:background="@null"
+        android:contentDescription="@null"
+        android:src="@drawable/progress_spinner" />
+
+    <ImageView
+        android:id="@+id/imgCheckmark"
+        android:layout_width="50dip"
+        android:layout_height="50dip"
+        android:layout_marginBottom="10dip"
+        android:layout_marginLeft="40dip"
+        android:layout_marginRight="40dip"
+        android:layout_marginTop="25dip"
+        android:background="@null"
+        android:layout_gravity="center"
+        android:contentDescription="@null"
+        android:scaleType="centerInside"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/txtMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:maxEms="10"
+        android:scaleType="centerInside"
+        android:text=""
+        android:textColor="@android:color/white"
+        android:textSize="15sp"
+        android:visibility="gone"/>
+
+</LinearLayout>

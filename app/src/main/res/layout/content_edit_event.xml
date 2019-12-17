@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.kapalert.kadunastategovernment.activities.EditEvent"
+    tools:showIn="@layout/activity_edit_event">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/_20sdp">
+
+            <EditText
+                android:id="@+id/event_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/shape_rounded_primary"
+                android:ems="10"
+                android:hint="@string/name"
+                android:inputType="textPersonName"
+                android:padding="@dimen/_8sdp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/white"
+                android:textSize="@dimen/_15sdp" />
+
+            <EditText
+                android:id="@+id/event_desc"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_80sdp"
+                android:gravity="top"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/shape_rounded_primary"
+                android:ems="10"
+                android:hint="@string/description"
+                android:inputType="textMultiLine"
+                android:padding="@dimen/_8sdp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/white"
+                android:textSize="@dimen/_15sdp" />
+
+            <TextView
+                android:id="@+id/event_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/shape_rounded_primary"
+                android:hint="@string/select_date"
+                android:padding="@dimen/_8sdp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/white"
+                android:textSize="@dimen/_15sdp" />
+
+            <TextView
+                android:id="@+id/event_start"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/shape_rounded_primary"
+                android:hint="@string/starts"
+                android:padding="@dimen/_8sdp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/white"
+                android:textSize="@dimen/_15sdp" />
+
+            <TextView
+                android:id="@+id/event_end"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/shape_rounded_primary"
+                android:hint="@string/ends"
+                android:padding="@dimen/_8sdp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/white"
+                android:textSize="@dimen/_15sdp" />
+
+            <TextView
+                android:id="@+id/select_users"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/shape_rounded_primary"
+                android:hint="@string/select_users"
+                android:padding="@dimen/_8sdp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/white"
+                android:textSize="@dimen/_15sdp" />
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:background="@drawable/selector_rounded_button"
+                android:minHeight="0dp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:minWidth="0dp"
+                android:padding="@dimen/_7sdp"
+                android:text="@string/submit"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_16sdp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

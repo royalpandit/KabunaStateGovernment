@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/_10sdp"
+    android:layout_marginRight="@dimen/_10sdp"
+    android:layout_marginTop="@dimen/_2sdp"
+    android:layout_marginBottom="@dimen/_5sdp"
+    android:id="@+id/bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/_10sdp">
+
+        <TextView
+            android:id="@+id/case_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Case ID : 156"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/_15sdp" />
+
+        <TextView
+            android:id="@+id/case_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:text="File Name : Testing"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/_15sdp" />
+
+        <TextView
+            android:id="@+id/case_stage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:text="STAGE NO. : 2"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/_13sdp" />
+
+        <TextView
+            android:id="@+id/case_step"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:text="STEP NO. : 2"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/_13sdp" />
+
+        <TextView
+            android:id="@+id/case_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:text="Status : Sent to Counsel"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/_13sdp" />
+
+        <Button
+            android:id="@+id/case_accept"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@drawable/selector_rect_button"
+            android:minHeight="0dp"
+            android:minWidth="0dp"
+            android:padding="@dimen/_4sdp"
+            android:text="@string/accept"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_13sdp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/case_close"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@drawable/selector_rect_button"
+            android:minHeight="0dp"
+            android:minWidth="0dp"
+            android:padding="@dimen/_4sdp"
+            android:text="@string/close_case"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_13sdp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/case_send"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@drawable/selector_rect_button"
+            android:minHeight="0dp"
+            android:minWidth="0dp"
+            android:padding="@dimen/_4sdp"
+            android:text="Send to Counsel"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_13sdp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/senddata"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@drawable/selector_rect_button"
+            android:minHeight="0dp"
+            android:minWidth="0dp"
+            android:padding="@dimen/_4sdp"
+            android:text="Send Advice To Police"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_13sdp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/uploadandforward"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@drawable/selector_rect_button"
+            android:minHeight="0dp"
+            android:minWidth="0dp"
+            android:padding="@dimen/_4sdp"
+            android:text="Upload And Forward To Counsel"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_13sdp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_uploadNote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@drawable/selector_rect_button"
+            android:minHeight="0dp"
+            android:minWidth="0dp"
+            android:padding="@dimen/_4sdp"
+            android:clickable="true"
+            android:text="@string/submit_note"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_13sdp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

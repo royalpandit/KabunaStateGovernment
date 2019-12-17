@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.StageNineActivity"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="20dp"
+    >
+
+    <TextView
+        android:id="@+id/datereqmda"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:background="@drawable/shape_rounded_primary"
+        android:hint="@string/select_offence_date"
+        android:padding="@dimen/_8sdp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/white"
+        android:textSize="@dimen/_15sdp" />
+
+    <Button
+        android:id="@+id/ok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:background="@drawable/selector_rect_button"
+        android:minHeight="0dp"
+        android:minWidth="0dp"
+        android:padding="@dimen/_4sdp"
+        android:text="Save"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_13sdp"
+        />
+</LinearLayout>
